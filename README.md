@@ -1,7 +1,7 @@
 # azure_project
 [Module 07 - Azure Project.pdf](https://github.com/yovelchen/azure_project/files/11929569/Module.07.-.Azure.Project.pdf)
 
-*steps db:* 
+# steps db:
 
 - install postgres:
 1.sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt   $(lsb_release -cs)-pgdg main" > /etc/apt/sources.list.d/pgdg.list'
@@ -35,7 +35,7 @@
 "#Allow client connections to all data bases and users 
 host    all          all            0.0.0.0/0  md5"
 
-*steps web:* 
+# steps web:
 1. sudo apt-get install postgresql-client
 2. psql -h 10.0.2.4 -U postgres
 3. mkdir flaskApp 
@@ -44,7 +44,7 @@ host    all          all            0.0.0.0/0  md5"
 6. pip install psycopg2-binary
 7. python3 azureApp.py
 
-*steps postman:* 
+# steps postman: 
 1. POST
 2. http://108.142.197.95:8080/data
 3. Body, raw
@@ -56,9 +56,10 @@ host    all          all            0.0.0.0/0  md5"
 }
 6. Send
 
-*check in db if data is saved:* 
+# check in db if data is saved: 
 1. \c flask_db
 2. SELECT * FROM table_gifts_yovel;
    
-*credits:*
-1. (https://devopscube.com/install-postgresql-on-ubuntu/)
+# credits:
+1. https://www.postgresql.org/download/linux/ubuntu/
+2. https://devopscube.com/install-postgresql-on-ubuntu/
