@@ -63,3 +63,4 @@ host    all          all            0.0.0.0/0  md5"
 # credits:
 1. https://www.postgresql.org/download/linux/ubuntu/
 2. https://devopscube.com/install-postgresql-on-ubuntu/
+3. chatGPT
